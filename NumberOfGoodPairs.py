@@ -41,7 +41,7 @@ def numIdenticalPairs(nums: list[int]) -> int:
     #         if nums[i] == nums[j] and i < j:
     #             number += 1
     
-    for k,v in newNums.items():
+    for _, v in newNums.items():
         if v > 1:
             number += (v*(v-1)) // 2
 
