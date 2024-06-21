@@ -31,7 +31,7 @@ def longestCommonPrefix( strs: list[str]) -> str:
             current = strs[0][i]
             
             # Check if this character is found in all other strings or not
-            for j in range(0, len(strs)):
+            for j in range(len(strs)):
                 if strs[j][i] != current:
                     return answer
             answer += current
