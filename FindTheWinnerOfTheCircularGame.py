@@ -18,7 +18,7 @@ The rules of the game are as follows:
 
 Given the number of friends, n, and an integer k, return the winner of the game.
 
-Naive Approach: Simulation - O(N)
+Naive Approach: Simulation - O(N²) coz (n - 1) eliminations, we might need to traverse all the n elements 
 - Use an array of size n (elements go from 1 to n)
 - at each iteration, we travel k - 1 places, so directly remove the (i + k - 1)th element 
 - if you go past the last element, start from the first again ( using index % len(array) )
